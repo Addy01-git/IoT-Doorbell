@@ -4,12 +4,12 @@
 #include <Servo.h>
 
 // Connection info.
-const char* ssid = "IoT_Lab";
-const char* password =  "iotlab123";
+const char* ssid = "WiFi SSID";
+const char* password =  "Wifi Password";
 const char* mqttServer = "mqtt.pndsn.com";
 const int mqttPort = 1883;
-const char* clientID = "pub-c-29b64883-e417-4b36-9e60-3c1ffd287362/sub-c-886cf286-885f-11e9-b819-0a4d0b84f71c/serverUUID-PUB";
-const char* channelName = "project";
+const char* clientID = "Publish/Subscribe/UUID";
+const char* channelName = "name";
 WiFiClient MQTTclient;
 Servo servo;
 PubSubClient client(MQTTclient);
