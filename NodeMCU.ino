@@ -4,12 +4,12 @@
 #include <Servo.h>
 
 // Connection info.
-const char* ssid = "WiFi SSID";
-const char* password =  "Wifi Password";
+const char* ssid = "WiFi SSID";                   // Enter your WiFi SSID
+const char* password =  "Wifi Password";          // Enter your WiFi Password
 const char* mqttServer = "mqtt.pndsn.com";
 const int mqttPort = 1883;
-const char* clientID = "Publish/Subscribe/UUID";
-const char* channelName = "name";
+const char* clientID = "Publish/Subscribe/UUID";  // Keys from PubNub
+const char* channelName = "name";                 // PubNub channel name
 WiFiClient MQTTclient;
 Servo servo;
 PubSubClient client(MQTTclient);
